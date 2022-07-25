@@ -50,7 +50,7 @@ public class ObjectPoolManager : MonoBehaviour
             p.ObjectTag = prefabs[tagIndex].tag;
         }
         else{
-            Debug.Log("Pool Pull" + prefabs[tagIndex].tag);
+            Debug.Log("Pool Pull " + prefabs[tagIndex].tag);
             p = _poolList[prefabs[tagIndex].tag][0];
             _poolList[prefabs[tagIndex].tag].RemoveAt(0);
         }
