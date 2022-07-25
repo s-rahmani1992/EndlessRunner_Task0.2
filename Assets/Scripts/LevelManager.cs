@@ -114,6 +114,7 @@ public class LevelManager : MonoBehaviour
 
     public void IncrementScore(int add){
         score += add;
+        speed = Mathf.Clamp(5 * Mathf.Floor(score / 5.0f) + 10, 15, 50);
         scoreTxt.text = score.ToString();
     }
 

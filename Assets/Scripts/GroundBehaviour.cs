@@ -33,11 +33,11 @@ public class GroundBehaviour : MonoBehaviour, IPoolable
 
     public void PlaceObstacles(float offset){
         float start = 0;
-        float r = offset + Random.Range(0, 10.0f);
+        float r = offset + Random.Range(0, 20.0f);
         start += r;
         while(start < cube.Dimension.z - 15){
             ObjectPoolManager.Instance.PullFromList(1, start, obstacleSizes[Random.Range(0, 3)], transform);
-            start += Random.Range(20, 30);
+            start += Random.Range(20, 40);
         }
     }
 }

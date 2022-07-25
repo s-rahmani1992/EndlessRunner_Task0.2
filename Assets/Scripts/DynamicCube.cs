@@ -33,6 +33,7 @@ public class DynamicCube : MonoBehaviour
                                     19, 18, 17, 16,
                                     23, 22, 21, 20}, MeshTopology.Quads, 0);
         mesh.RecalculateNormals();
+        mesh.RecalculateBounds();
     }
 
     public void SetDimension(Vector3 dim){
